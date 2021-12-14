@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint . --ext .ts",
     "devstart": "cd src && npm run start",
-    "start": "tsc && node dist/src/app.js"
+    "start": "npx tsc && node dist/src/app.js"
   },
   "repository": {
     "type": "git",
