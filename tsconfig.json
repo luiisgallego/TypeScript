@@ -9,6 +9,7 @@
       "plugins": [
         { "name": "typescript-tslint-plugin" }
       ]
-    },    
+    },
+    "types": ["node"],
     "include": ["./src"],
   }
