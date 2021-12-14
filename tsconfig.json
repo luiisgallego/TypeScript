@@ -2,7 +2,8 @@
     "compilerOptions": {
       "module": "commonjs",
       "target": "es6",
-      "rootDir": "./src",
+      "rootDir": "./",
+      "outDir": "dist",
       "esModuleInterop": true,
       "plugins": [
         { "name": "typescript-tslint-plugin" }

@@ -5,8 +5,8 @@
   "main": "src/app.ts",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "lintstart": "npm run lint && npm run start",
-    "start": "cd src && npx ts-node app.ts"
+    "devstart": "cd src && npm run start",
+    "start": "tsc && dist/app.js"
   },
   "repository": {
     "type": "git",
