@@ -1,7 +1,8 @@
 import express, { Request, Response, NextFunction } from 'express';
 
 const app = express();
-const port = 3000;
+// const port = 3000;
+app.set('puerto', process.env.PORT || 3000);
 
 interface LocationWithTimezone {
     location: string;
@@ -46,6 +47,6 @@ app.get(
   getLocationsWithTimezones,
 );
 
-app.listen(port, () => {
-  console.log(`Timezones by location application is running on port ${port}.`);
+app.listen(app.get('puerto'), () => {
+  console.log(`Timezones by location application is running on port ${app.get('puerto')}.`);
 });
